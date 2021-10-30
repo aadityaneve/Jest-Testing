@@ -48,9 +48,9 @@
 
 ## Steps for setup:
 
-- npm: npm install --save-dev jest
-- Add "test": "jest" under scripts in package.json
-- run comand: npm test -- --watch
+- npm: `npm install --save-dev jest`
+- Add: `"test": "jest"` under scripts in package.json
+- run comand: `npm test -- --watch`
 
 ## Structure
 
@@ -64,22 +64,22 @@
 
 > > ## Basic expectations:
 
-> > - expect(value)
-> > - .toBe(value)
-> > - .toEqual(value)
+> > - `expect(value)`
+> > - `.toBe(value)`
+> > - `.toEqual(value)`
 
 > > ## Boolean expectations:
 
-> > - .toBeFalsy()
-> > - .toBeNull()
-> > - .toBeTruthy()
-> > - .toBeUndefined()
-> > - .toBeDefined()
-> > - .toBeNaN()
+> > - `.toBeFalsy()`
+> > - `.toBeNull()`
+> > - `.toBeTruthy()`
+> > - `.toBeUndefined()`
+> > - `.toBeDefined()`
+> > - `.toBeNaN()`
 
 > > ## Numbers:
 
-> > - .toBeGreaterThan(number | bigint)
-> > - .toBeGreaterThanOrEqual(number | bigint)
-> > - .toBeLessThan(number | bigint)
-> > - .toBeLessThanOrEqual(number | bigint)
+> > - `.toBeGreaterThan(number | bigint)`
+> > - `.toBeGreaterThanOrEqual(number | bigint)`
+> > - `.toBeLessThan(number | bigint)`
+> > - `.toBeLessThanOrEqual(number | bigint)`
