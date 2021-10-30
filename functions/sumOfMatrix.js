@@ -10,54 +10,50 @@
 */
 
 // give your matrix here
-let matrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
+let matrix;
 
 function sumOfMatrix(matrix) {
   let sum = 0;
-  for (let arr of matrix) {
-    for (let i = 0; i < arr.length; i++) {
-      sum += arr[i];
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      sum += matrix[i][j];
     }
   }
-  console.log(sum);
+  return sum;
 }
 
-function areAllElementsNumber(matrix) {
-  let allElementsAreNumber = true;
-  for (let arr of matrix) {
-    for (let i = 0; i < arr.length; i++) {
-      if (isNaN(arr[i])) {
-        console.log("All elements should be number in matrix.");
-        allElementsAreNumber = false;
-        break;
-      }
-    }
-  }
-  if (allElementsAreNumber) {
-    sumOfMatrix(matrix);
-  }
+function test(str, fn) {
+  console.log(str);
+  fn();
 }
 
-function isUndefined(matrix) {
-  if (typeof matrix === "undefined") {
-    console.log("Matrix is not defined");
-    return true;
-  } else {
-    return false;
-  }
-}
+// function expect(value) {
+//   function toBe(result) {
+//     if (typeof value === result) {
+//       console.log("Accepted");
+//       console.log("Sum is : ", sumOfMatrix(matrix));
+//     }
+//     // else if (typeof value != result) {
+//     //   console.log(`Expected: ${result}, output: ${value}`);
+//     // }
 
-function isEmpty(matrix){
-    if(matrix.length == 0){
-        console.log("Matrix is empty.")
-        return true;
-    }
-}
+//     if (typeof value === result) {
+//       console.log(`Matrix is undefined - Expected: ${[]}, output: ${result}`);
+//     }
+//   }
+//   return { toBe };
+// }
 
-if (!isUndefined(matrix) && !isEmpty(matrix)) {
-  areAllElementsNumber(matrix);
-}
+// test("Sum of matrix:", () => {
+//   if (matrix != undefined) {
+//     expect(sumOfMatrix(matrix)).toBe("number");
+//   }else{
+//       console.log("-")
+//   }
+// });
+
+// test("Matrix undefined:", () => {
+//   if (matrix == undefined) {
+//     expect(matrix).toBe(undefined);
+//   }
+// });
