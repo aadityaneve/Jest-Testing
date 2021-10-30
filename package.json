@@ -1,0 +1,23 @@
+{
+  "name": "jest-testing",
+  "version": "1.0.0",
+  "description": "> It is a process that makes sure that your code works as expected. It is used for making sure that all the required cases are handled.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aadityaneve/Jest-Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aadityaneve/Jest-Testing/issues"
+  },
+  "homepage": "https://github.com/aadityaneve/Jest-Testing#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
